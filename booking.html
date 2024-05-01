@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking & Reservations</title>
+    <link rel="stylesheet" href="Assest/style.css">
+</head>
+<body> 
+       <!-- Navigation bar -->
+    <nav class="navbar" id="navbar">
+      <div>
+        <!-- Logo -->
+        <a href="index.html"><img src="Assest/IMAGE/grand peace logo.png" class="logo" alt="hotel" /></a>
+      </div>
+      <!-- Menu items -->
+         
+      <ul id="navigationUl">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="branch.html" >Branches</a></li>
+        <!-- Dropdown menu for Restaurants -->
+        <li class="dropdown">
+          <a href="restaurant.html" class="dropbtn">Restaurants</a>
+          <div class="dropdown-content">
+            <a href="eventone.html">Events-Christmas</a>
+            <a href="eventtwo.html">Events-weddings</a>
+          </div>
+        </li>
+        <li><a href="adventure.html">Adventures</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+      </ul>
+      <!-- Booking button -->
+      <div id="bookingButton" class="booking-button">
+        <a href="booking.html">Booking</a>
+      </div>
+      <!-- Close button for mobile navigation -->
+      <div id="navCloseButton" class="nav-close-button" onclick="closeNavbar();">
+          X
+        </div>
+        <!-- Open button for mobile navigation -->
+        <div id="navOpenButton" class="nav-open-button" onclick="openNavbar();">
+          |||
+        </div>
+      </nav>
+
+    <!-- Booking form for hotel rooms -->
+    <section class="booking-form">
+        <h2>Book a Hotel Room</h2>
+        <!-- Form elements for room booking -->
+        <label for="room-type">Choose Room Type:</label>
+        <select name="room-type" id="room-type">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="triple">Triple</option>
+        </select>
+        <label for="num-adults">Number of Adults:</label>
+        <input type="number" name="num-adults" id="num-adults" min="1" required>
+        <label for="num-children">Number of Children:</label>
+        <input type="number" name="num-children" id="num-children" min="0" required>
+        <label for="duration">Duration of Stay (in days):</label>
+        <input type="number" name="duration" id="duration" min="1" required>
+        <label for="extra-requirements">Extra Requirements:</label>
+        <textarea name="extra-requirements" id="extra-requirements" rows="4"></textarea>
+        <button id="bookNowButton">Book Now</button>
+    </section>
+
+    <!-- Booking form for adventures -->
+    <section class="booking-form">
+        <h2>Book an Adventure</h2>
+        <!-- Form elements for adventure booking -->
+        <label for="adventure-type">Choose Adventure:</label>
+        <select name="adventure-type" id="adventure-type">
+            <option value="divingLocalAdults">Diving for Local Adults</option>
+            <option value="divingLocalKids">Diving for Local Kids</option>
+            <option value="divingForeignAdults">Diving for Foreign Adults</option>
+            <option value="divingForeignKids">Diving for Foreign Kids</option>
+        </select>
+        <label for="add-guide">Add a Guide:</label>
+        <input type="checkbox" name="add-guide" id="add-guide">
+        <button id="bookAdventureButton">Book Adventure</button>
+    </section>
+
+    <!-- Promo code input -->
+    <input type="text" id="promoCodeInput" placeholder="Enter promo code">
+    <!-- Button to check loyalty points -->
+    <button id="checkLoyaltyButton">Check Loyalty Points</button>
+
+      <!-- Footer section -->
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo">About Us</a></li>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo">Contact Us</a></li>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo">Terms of Service</a></li>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul class="social-media">
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo"><img src="https://img.icons8.com/color/48/000000/facebook.png"></a></li>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo"><img src="https://img.icons8.com/color/48/000000/instagram.png"></a></li>
+                    <li><a href="https://web.facebook.com/search/top?q=cinnamon%20grand%20colombo/"><img src="https://img.icons8.com/color/48/000000/youtube.png"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
